@@ -1,0 +1,32 @@
+name: MiniJeux
+version: 1.0.0
+main: fr.minijeux.MiniJeux
+api-version: '1.20'
+description: Lobby, duels et mini-jeux (Spleef)
+
+commands:
+  duel:
+    description: Défier un joueur ou rejoindre la file de duel
+    usage: /duel <joueur|accept|deny|queue|leave|stats>
+  duelarena:
+    description: Gérer les arènes de duel
+    usage: /duelarena <spawn1|spawn2|delete|list> [nom]
+    permission: minijeux.admin
+  spleef:
+    description: Mini-jeu Spleef
+    usage: /spleef <join|leave|pos1|pos2>
+  lobby:
+    description: Retourner au lobby
+    usage: /lobby
+  setlobby:
+    description: Définir le lobby
+    usage: /setlobby
+    permission: minijeux.admin
+  jeux:
+    description: Ouvrir le menu des jeux
+    usage: /jeux
+
+permissions:
+  minijeux.admin:
+    description: Administration de MiniJeux
+    default: op

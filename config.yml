@@ -1,0 +1,11 @@
+# Le lobby, les arènes de duel et la zone de Spleef sont enregistrés ici
+# automatiquement par les commandes (/setlobby, /duelarena, /spleef pos1/pos2).
+
+duel:
+  invite-expire-seconds: 30
+  countdown: 5
+
+spleef:
+  min-players: 2
+  max-players: 16
+  start-countdown: 15
